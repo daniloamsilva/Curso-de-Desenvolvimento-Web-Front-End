@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula 17</title>
+</head>
+<body>
+
+	<h2>Produtos</h2>
+
+	<!-- A largura da tabela pode ser em pixels ou porcetagem -->
+	<table border="2" width="500">
+
+		<tr>
+			<th>Código</th>
+			<th>Produto</th>
+			<th>Preço</th>
+		</tr>
+
+		<tr>
+			<td>001</td>
+			<td>Notebook</td>
+			<td>R$ 2.500,99</td>
+		</tr>
+
+		<tr>
+			<td>002</td>
+			<td>Tablet</td>
+			<td>R$ 999,99</td>
+		</tr>
+
+		<tr>
+			<!-- <rowspan> estende o número de linhas de uma celula -->
+			<td rowspan="2">Desconto</td>
+			<!-- <colspan> estende o número de colunas de uma celula -->
+			<td colspan="2">cupom1 -R$ 10</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">cupom2 -R$ 12</td>
+		</tr>
+
+		<tr>
+			<td>Total</td>
+			<td colspan="2">R$ 3.478,98</td>
+		</tr>
+
+	</table>
+
+	<hr>
+
+	<h2>Simulação de tabela com imagem ou link</h2>
+	
+	<table border="2" width="100%">
+		<tr>
+			<th>Imagem</th>
+			<th>Link</th>
+		</tr>
+
+		<tr>
+			<td><img src="imagens/ferrari.jpg" width="50%"></td>
+			<td><a href="">Clique aqui</a></td>
+		</tr>
+	</table>
+
+</body>
+</html>
