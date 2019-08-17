@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos flutuantes</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			#principal {
+				border: 5px solid red;
+				background: green;
+			}
+			
+			.conteudo {
+				background: blue;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+				float: right;
+			}
+
+			/*
+			.conteudo1 {
+				background: red;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+				float: left;
+			}
+			*/
+
+			.conteudo-zero {
+				background: red;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+			}
+
+			.clear {
+				clear: both;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div id="principal">
+
+			<div class="conteudo">
+				Conteúdo 1
+			</div>
+
+			<div class="conteudo">
+				Conteúdo 2
+			</div>
+
+			<div class="conteudo">
+				Conteúdo 3
+			</div>
+
+			<!--<div class="clear">aa</div>-->
+			<p class="clear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque et nunc placerat auctor. Duis fringilla pellentesque vehicula. Fusce at quam quis sapien tempor congue id at tortor. Nullam placerat arcu quis justo ultricies iaculis. Fusce quis congue nunc, vitae sodales libero. Duis et augue quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis finibus augue in justo suscipit, sed imperdiet metus varius. Praesent rhoncus tempus condimentum. Sed eu justo ligula. Duis leo neque, porta tincidunt sem id, pretium finibus augue. Pellentesque sit amet nulla efficitur, eleifend est eget, mollis diam.</p>
+
+		</div>
+
+	</body>
+</html>
