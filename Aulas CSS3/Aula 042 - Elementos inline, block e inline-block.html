@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos inline, block e inline-block</title>
+		<meta charset="utf-8">		
+
+		<style type="text/css">
+			
+			.borda {
+				border: 1px solid red;
+			}
+
+			.inline-block {
+				border: 1px solid red;
+				display: inline-block;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<h1>Elementos block</h1>
+		<h2 class="borda">Block 1</h2>
+		<h2 class="borda">Block 2</h2>
+		<hr>
+
+		<h1>Elementos inline</h1>
+		<span class="borda">Inline 1</span>
+		<span class="borda">Inline 2</span>
+		<hr>
+
+		<h1>Elementos inline-block</h1>
+		<p>Podemos mudar o comportamento padrão utilizando a propriedade "display".</p>
+		<p>Exemplo: span com display "inline-block"</p>
+		<span class="inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+		<span class="inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet tortor scelerisque, molestie ipsum iaculis, cursus mauris.</span>
+		<p>* diminuindo a tela, o segundo span cai para a linha debaixo</p>
+
+	</body>
+</html>
