@@ -1,0 +1,129 @@
+body {
+	font: 16px Arial, Helvetica, sans-serif;
+	background: #F2F2F2;
+}
+
+h3 {
+	margin: 0px;
+	padding: 5px;
+	color: #4A4B50;
+	background: #F2F2F2;
+}
+
+#cabecalho {
+	background: #FFC400;
+	height: 150px;
+	margin: -8px;
+	padding-bottom: 10px;
+}
+
+#logo {
+	width: 185px;
+	margin: auto;
+	padding: 30px
+}
+
+#logoTec {
+	color: #4A4B50;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#logoBlog {
+	color: #FFF;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#menu {
+	width: 472px;
+	margin: auto;
+}
+
+#conteudo {
+	margin: 10px auto;
+	width: 1000px;
+	position: relative;
+}
+
+#postagens-recentes {
+	background: #FFF;
+	padding: 10px;
+	width: 260px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#categorias {
+	background: #FFF;
+	padding: 10px;
+	width: 260px;
+	position: absolute;
+	top: 200px;
+	right: 0px;
+}
+
+#rodape {
+	margin: 10px auto;
+	width: 925px;
+	padding: 20px;
+	background: #D8D8D8;
+}
+
+#direitos-reservados {
+	width: 230px;
+	margin: auto;
+	font-weight: bold;
+}
+
+.item-menu {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+
+.item-menu:hover {
+	background: #FFF;
+	color: #FFC400;
+}
+
+.postagem {
+	background: #FFF;
+	padding: 20px;
+	margin: 20px;
+	width: 640px;
+}
+
+.titulo-postagem {
+	margin: 0px;
+	color: #FFC400;
+}
+
+.data-postagem {
+	margin-top: 0px;
+	font-size: 0.8em;
+}
+
+.leia-mais {
+	text-decoration: none;
+	color: #FFC400;
+}
+
+.texto-postagem-recente {
+	font-size: 0.8em;
+	margin-bottom: 0px;
+}
+
+.leia-mais-postagens {
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #FFC400;
+}
+
+.categoria {
+	text-decoration: none;
+	color: #FFC400;
+}
