@@ -1,0 +1,69 @@
+/*****************************************
+Seletor universal 
+Aplica-se em todos os elementos no documento 
+* {
+	border: 1px solid red;
+} */
+
+/*****************************************
+Seletor de texto 
+Seleciona elementos pelo tipo */
+h1 {
+	color: blue;
+}
+
+/*****************************************
+Seletor de classe 
+Seleciona um elemento cujo atributo class 
+tem o valor especificado depois do ponto 
+.verde {
+	color: green;
+}
+*/
+
+p.verde {
+	color: green;
+}
+
+/*****************************************
+Seletor de ID 
+Seleciona um elemento cujo atributo id tem o valor
+especificado após o símbolo de cerquilha ou jogo da velha */
+#cabecalho {
+	border: 1px solid blue;
+}
+
+/*****************************************
+Seletor de filho 
+Seleciona um elemento que é filho direto de outro */
+li > a {
+	color: red;
+	text-decoration: none;
+}
+
+/*****************************************
+Seletor descendente 
+Seleciona um elemento que é descendente de outro
+elemento especificado (e não apenas filho direto
+desse elemento)
+ */
+div a {
+	color: green;
+	text-decoration: none;
+}
+
+/*****************************************
+Seletor de irmão adjacente 
+Seleciona um elemento que é o irmão próximo de outro */
+h1+p {
+	color: red;
+}
+
+/*****************************************
+Seletor de irmão geral 
+Seleciona um elemento que é um irmão de outro,
+embora ele não precise ser o elemento diretamente
+precedente */
+h1~p {
+	color: pink;
+}
