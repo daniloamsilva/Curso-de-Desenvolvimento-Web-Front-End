@@ -1,0 +1,32 @@
+#lista ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lista li {
+    padding: 10px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+}
+
+#navegacao ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navegacao a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: url(../imagens/menu.png) no-repeat left bottom;
+}
+
+#navegacao a:hover {
+    background-position: right bottom;
+    color: #ffffff;
+}
