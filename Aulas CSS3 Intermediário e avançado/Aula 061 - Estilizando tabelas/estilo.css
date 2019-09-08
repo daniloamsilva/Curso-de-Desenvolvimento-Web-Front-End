@@ -1,0 +1,33 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    border-top: 1px solid lightgrey;
+    border-bottom: 2px solid grey;
+    text-transform: uppercase;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+tr.alternado {
+    background-color: #efefef;
+}
+
+tr:hover {
+    background-color: #c3e6e5;
+}
+
+.numero {
+    text-align: right;
+}
