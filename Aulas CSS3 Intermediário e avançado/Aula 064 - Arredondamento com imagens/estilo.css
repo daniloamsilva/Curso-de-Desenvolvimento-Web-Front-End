@@ -1,0 +1,38 @@
+/* QUADRO 1 */
+
+#quadro1 {
+    width: 400px;
+    background: #dedede url(imagens/topo.png) no-repeat left top;
+}
+
+#quadro1 p {
+    padding: 0 20px 20px 20px;
+    background: url(imagens/baixo.png) no-repeat left bottom;
+}
+
+#quadro1 h2 {
+    padding: 10px 20px 0 20px;
+}
+
+/* QUADRO 2 */
+
+#quadro2 {
+    width: 400px;
+    background: #dedede url(imagens/fundo-arredondamento.png) repeat-y;
+}
+
+#quadro2 h2{
+    background: url(imagens/topo2.png) no-repeat left top;
+    padding: 10px 20px 0 20px;
+}
+
+#quadro2 p {
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.ultimo {
+    width: 400px;
+    height: 24px;
+    background: url(imagens/baixo2.png) no-repeat left bottom;
+}
