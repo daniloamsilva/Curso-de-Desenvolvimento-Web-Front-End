@@ -1,0 +1,46 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+article {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+    float: left;
+}
+
+nav {
+    border: 1px solid black;
+    padding: 0 20px;
+    margin: 20px;
+    float: none;
+}
+
+header {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+section {
+    width: 90%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+aside {
+    width: 260px;
+    border: 1px solid black;
+    float: right;
+    margin: 20px;
+}
+
+footer {
+    clear: both;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
