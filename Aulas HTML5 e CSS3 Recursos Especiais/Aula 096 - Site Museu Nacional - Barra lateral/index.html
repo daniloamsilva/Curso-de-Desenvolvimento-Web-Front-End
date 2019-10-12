@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Musel Nascional</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    
+    <div id="container"><!--Início container-->
+
+        <header><!--Início header-->
+            <div id="logo">
+                <h1><a href="">Museu Nascional</a></h1>
+            </div>
+
+            <nav><!--Início nav-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Exposições</a></li>
+                    <li><a href="#">Pesquisa</a></li>
+                    <li><a href="#">Acervo</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav><!--Fim nav-->
+        </header><!--Fim header-->
+
+        <div id="principal"><!--Início principal-->
+
+            <div id="conteudo"><!--Início conteúdo-->
+                <section id="capa">
+                    <img src="img/museu.png" alt="museu">
+                </section>
+            </div><!--Fim conteúdo-->
+
+            <aside><!--Início aside-->
+                <section id="depoimento">
+                    <img src="img/depoimento.png" alt="depoimento">
+                </section>
+
+                <section id="visita"><!--Início visita-->
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+
+                            <label for="data">Data:</label>
+                            <input class="campo" type="text" id="data" placeholder="dd/mm/aaaa">
+
+                            <label for="qtd">Qtd pessoas:</label>
+                            <input class="campo" style="width: 30px" type="text" id="qtd" value="1">
+                        </fieldset>
+
+                        <input class="botao" type="submit" value="Verificar disponibilidade">
+                    </form>
+                </section><!--Fim visita-->
+
+                <section id="galeria">
+                    <h4>Galeria de foto</h4>
+
+                    <a href=""><img src="img/imagem1.jpg" alt="imagem1"></a>
+                    <a href=""><img src="img/imagem2.jpg" alt="imagem2"></a>
+                    <a href=""><img src="img/imagem3.jpg" alt="imagem3"></a>
+                    <a href=""><img src="img/imagem4.jpg" alt="imagem4"></a>
+                </section>
+            </aside><!--Fim aside-->
+
+        </div><!--Fim principal-->
+
+    </div><!--Fim container-->
+
+</body>
+</html>
