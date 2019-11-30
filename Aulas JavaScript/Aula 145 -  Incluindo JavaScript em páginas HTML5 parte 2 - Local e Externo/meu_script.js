@@ -1,0 +1,1 @@
+alert('Eu sou um script externo.');
