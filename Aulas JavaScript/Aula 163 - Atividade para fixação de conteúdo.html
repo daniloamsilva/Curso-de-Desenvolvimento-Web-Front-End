@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        
+        // 0-15 criança
+        // 16-30 jovem
+        // 31-60 adulto
+        // 61 idoso
+
+        var idade = prompt('Digite sua idade:')
+        idade = parseInt(idade)
+
+        if (idade >= 0 && idade <= 15) {
+            document.write('Criança')
+        } else if (idade >= 16 && idade <= 30) {
+            document.write('Jovem')
+        } else if (idade >= 31 && idade <= 60){
+            document.write('Adulto')
+        } else if (idade >= 61) {
+            document.write('Idoso')
+        } else {
+            document.write('Idade inválida')
+        }
+
+        document.write('<br>')
+
+        var resultado = (idade >= 0 && idade <= 15) ? 'Criança' : 
+                        (idade >= 16 && idade <= 30) ? 'Jovem' : 
+                        (idade >= 31 && idade <= 60) ? 'Adulto' : 
+                        (idade >= 61) ? 'Idoso' : 'Idade inválida'
+        document.write(resultado)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
