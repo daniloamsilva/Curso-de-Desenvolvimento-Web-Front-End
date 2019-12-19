@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+    
+        // Esta variável esta na escopo global e acessível em todo o código
+        var variavelGlobal = 'Eu sou global'
+
+        if (true){
+            // Esta variável esta no escopo de bloco
+            // Essas variáveis são elevadas para o escopo global
+            var variavelBloco = 'Eu sou de bloco e global'
+        }
+
+        function funcao(){
+            // Esta variável esta no escopo de função e somente acessível aqui
+            var variavelFuncao = 'Eu sou somente da funcao'
+
+            // Podemos acessar as outras variáveis aqui dentro
+            var variavelGlobal = 'Eu sou global e acessível aqui'
+            variavelBloco = 'Eu sou de bloco e acessível aqui'
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
