@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+    
+        function exibirArtigo(id, callbackSucesso, callbackErro){
+            if(true){
+                callbackSucesso('Título do artigo', 'Corpo do artigo')
+            } else {
+                callbackErro('Mensagem do erro')
+            }
+        }
+
+        var callbackSucesso = function(titulo, corpo) {
+            document.write('<h2>' + titulo + '</h2>')
+            document.write('<hr>')
+            document.write(corpo)
+        }
+
+        var callbackErro = function(erro){
+            document.write('Erro: ' + erro)
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro)
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
