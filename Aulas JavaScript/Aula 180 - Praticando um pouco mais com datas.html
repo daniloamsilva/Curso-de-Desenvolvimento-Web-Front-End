@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+    
+        var date = new Date();
+
+        // Adicionar um dia
+        document.write(date.toString() + "<br>")
+        date.setDate(date.getDate() + 1)
+        document.write(date.toString() + "<hr>")
+
+        // Adicionar um mês
+        document.write(date.toString() + "<br>")
+        date.setMonth(date.getMonth() + 1)
+        document.write(date.toString() + "<hr>")
+
+        // Adicionar um ano
+        document.write(date.toString() + "<br>")
+        date.setFullYear(date.getFullYear() + 1)
+        document.write(date.toString() + "<hr>")
+
+        // *** CÁLCULO DE DIAS ENTRE DUAS DATAS ***
+        var data1 = new Date(); // Data 1 - data de hoje
+        var data2 = new Date(2020, 0, 1) // Data 2 - 01/01/2020
+
+        document.write(data1.toString() + "<br>")
+        document.write(data2.toString() + "<hr>")
+
+        // Conversão das duas datas em milissegundos
+        document.write(data1.getTime() + "<br>")
+        document.write(data2.getTime() + "<hr>")
+
+        // Cálculo da diferença de milissegundos entre as duas datas
+        var diferenca = Math.abs(data1.getTime() - data2.getTime())
+        document.write(diferenca + "<hr>")
+
+        // Cálculo da diferença de dias
+        var umDia = 1*24*60*60*1000
+        var dias = Math.ceil(diferenca / umDia)
+        document.write("Diferença de " + dias + " dias.<hr>")
+
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
