@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+    
+        function eventoClick(){
+            alert("Evento de click disparado!")
+        }
+
+        function eventoDblClick(){
+            alert("Evento de click duplo disparado")
+        }
+
+        function eventoMouseUp(){
+            alert("Evento de mouseUp foi disparado")
+        }
+
+        function eventoMouseOver(){
+            alert("Evento de mouseOver foi disparado")
+        }
+
+        function eventoMouseOut(){
+            alert("Evento de mouseOut foi disparado")
+        }
+    
+    </script>
+</head>
+<body>  
+    <div onclick="eventoClick()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left;"></div>
+    <div ondblclick="eventoDblClick()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left;"></div>
+    <div onmouseup="eventoMouseUp()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left;"></div>
+    <div onmouseover="eventoMouseOver()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left;"></div>
+    <div onmouseout="eventoMouseOut()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left;"></div>
+</body>
+</html>
