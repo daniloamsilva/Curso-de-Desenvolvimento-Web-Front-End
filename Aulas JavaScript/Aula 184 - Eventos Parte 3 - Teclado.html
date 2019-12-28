@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+    
+        function eventoKeyDown(){
+            alert('Evento onKeyDown disparado')
+        }
+        function eventoKeyUp(){
+            alert('Evento onKeyUp disparado')
+        }
+        function eventoKeyPress(){
+            alert('Evento onKeyPress disparado')
+        }
+    
+    </script>
+</head>
+<body>  
+    Evento onKeyDown
+    <input onkeydown="eventoKeyDown()" type="text"><br><br>
+    Evento onKeyUp
+    <input onkeyup="eventoKeyUp()" type="text"><br><br>
+    Evento onKeyPress
+    <input onkeypress="eventoKeyPress()" type="text"><br><br>
+</body>
+</html>
