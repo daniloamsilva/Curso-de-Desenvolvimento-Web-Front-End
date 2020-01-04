@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        function recebeFocu(){
+            document.getElementById('campo_texto').style.background = 'yellow';
+        }
+        function perdeFocu(){
+            var campo_texto = document.getElementById('campo_texto');
+            var texto = campo_texto.value;
+
+            if(texto.length < 3){
+                campo_texto.style.background = "red";
+            } else {
+                campo_texto.style.background = "green";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="campo_texto" onfocus="recebeFocu()" onblur="perdeFocu()">
+</body>
+</html>
