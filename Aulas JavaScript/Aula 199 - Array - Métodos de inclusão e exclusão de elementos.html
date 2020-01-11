@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        
+        // Array com uma dimensão
+        var lista_frutas = [];
+
+        lista_frutas[0] = 'Maça';
+        lista_frutas[1] = 'Laranja';
+
+        // Inclui elemento no final do array
+        lista_frutas.push('Banana');
+        // Incluir elemento no inicio do array
+        lista_frutas.unshift('Uva');
+        // Exclui elemento do final do array
+        lista_frutas.pop();
+        // Exclui elemento no inicio do array
+        lista_frutas.shift();
+
+        // Array com duas dimensões
+        var lista_coisas = Array();
+        lista_coisas['frutas'] = ['Maça', 'Laranja'];
+        lista_coisas['pessoas'] = ['João', 'Paulo'];
+
+        lista_coisas['frutas'].push('Banana');
+        lista_coisas['pessoas'].unshift('Daniel');
+        lista_coisas['frutas'].pop();
+        lista_coisas['pessoas'].shift();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
