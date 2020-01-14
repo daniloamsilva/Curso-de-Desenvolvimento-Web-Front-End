@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        
+        // Array dos objetos
+        var objetos = ['Cadeira', 'Impressora', 'Garfo'];
+
+        // Função para adicionar um objeto no array
+        function adicionar(){
+            // Recupero o valor que foi digitado
+            var texto = document.getElementById('txtObjeto').value;
+
+            if(texto === ''){ // Se o texto estiver vazio
+                // Envio um alerta
+                alert('Informe um valor válido!'); 
+            } else { // Se o texto foi preenchido
+
+                if(objetos.indexOf(texto) !== -1 ){ // Se o objeto já existe no array
+                    // Envio um alerta
+                    alert('Objeto já foi adicionado!');
+                } else { // Se o objeto não existe no array
+                    // Inclui o objeto novo no array
+                    objetos.push(texto);
+                    // Imprime o array para debug
+                    console.log(objetos);
+                    // Limpa o campo de texto
+                    document.getElementById('txtObjeto').value = '';
+                }
+
+            }
+        }
+
+        // Função para ordenar os objetos do array
+        function ordenar(){
+            // Ordena o array
+            objetos.sort();
+            // Imprime o array ordenado para debug
+            console.log(objetos);
+        }
+
+    </script>
+</head>
+<body>
+    
+    <!-- Componentes visuais -->
+    <input type="text" id="txtObjeto" placeholder="Objeto">
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+
+</body>
+</html>
