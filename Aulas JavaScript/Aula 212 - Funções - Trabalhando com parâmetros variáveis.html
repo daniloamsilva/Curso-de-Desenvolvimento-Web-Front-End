@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        
+        function soma() {
+            var resultado = 0;
+            for(var i in arguments){
+                resultado += arguments[i];
+            }
+            return resultado;
+        }
+
+        console.log(soma(7, 5, 3.2, 0.8, 'Texto'));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
