@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        
+        var array = Array();
+
+        array[1] = Array();
+        array[1]['texto'] = 'Qualquer frase';
+
+        try{
+            console.log(array[0]['nome']);
+        } catch(erro) {
+            console.log(erro);
+            console.log('Erro capturado');
+        } finally {
+            console.log('Sempre passa por aqui!');
+        }
+
+        console.log('Aplicação não morreu');
+
+        throw new Error('Erro customizado foi lançado.');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
