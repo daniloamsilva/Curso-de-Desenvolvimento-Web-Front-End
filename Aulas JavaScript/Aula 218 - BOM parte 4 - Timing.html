@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        //setTimeout(function(){document.write('Função setTimeout funcionando')}, 2000);
+
+        x = 0;
+        var interval = setInterval(() => {
+            document.write(x + '<br>');
+            x++
+
+            if(x > 10){
+                clearInterval(interval);
+            }
+        }, 1000);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
