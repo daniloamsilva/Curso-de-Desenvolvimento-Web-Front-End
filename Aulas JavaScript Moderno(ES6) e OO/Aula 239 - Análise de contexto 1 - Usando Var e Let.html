@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        
+        var serie = 'Friends';
+
+        {
+            var serie = 'Game of Thrones';
+            document.write(serie + '<br>');
+        }
+
+        document.write(serie);
+
+        // Será impresso Game of Thrones duas vezes
+        // O var não preserva o escopo e nesse caso sobrepõe e variável no escopo global
+
+    </script>
+</body>
+</html>
