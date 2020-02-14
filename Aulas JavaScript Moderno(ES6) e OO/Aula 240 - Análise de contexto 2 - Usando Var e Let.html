@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        
+        let serie = 'Friends';
+
+        {
+            let serie = 'Game of Thrones';
+            document.write(serie + '<br>');
+        }
+
+        document.write(serie);
+
+        // Será impresso Game of Thrones no escopo da função
+        // Depois será impresso Friends no escopo global
+        // O let preserva o escopo nesse caso
+    </script>
+</body>
+</html>
