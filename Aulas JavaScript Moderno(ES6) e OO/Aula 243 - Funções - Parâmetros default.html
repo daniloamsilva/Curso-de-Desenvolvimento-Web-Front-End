@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        
+        function historia(cachorro = 'Pingo', atividade = 'latir', dono = 'Pedro'){
+            document.write(`Era uma vez um cachorro chamado ${cachorro}, ele adorava ${atividade}, seu dono era o ${dono} e eles viveram felizes para sempre.<br>`);
+        }
+
+        // Imprime com os valores default
+        historia();
+
+        // Imprime com o nome de outro cachorro e o restante com valores default
+        historia('Fubá');
+
+        // Imprime com o nome default do cachorro e troca as outra variáveis
+        historia(undefined, 'correr', 'Marcelo');
+
+    </script>
+</body>
+</html>
