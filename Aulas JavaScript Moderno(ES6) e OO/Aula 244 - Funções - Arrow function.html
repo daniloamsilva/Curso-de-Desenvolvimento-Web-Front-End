@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        
+        // Função normal
+        function parOuImpar1(x){
+            if(x % 2 == 0)
+                return 'par';
+            else
+                return 'impar';
+        }
+
+        // Função anônima
+        let parOuImpar2 = function(x) {
+            if(x % 2 == 0)
+                return 'par';
+            else
+                return 'impar';
+        }
+
+        // Arrow function
+        let parOuImpar3 = (x) => {
+            if(x % 2 == 0)
+                return 'par';
+            else
+                return 'impar';
+        }
+
+        // Arrow function melhorada
+        let parOuImpar4 = x => {
+            if(x % 2 == 0)
+                return 'par';
+            else
+                return 'impar';
+        };
+
+        // Arrow function melhorada com operador ternario
+        let parOuImpar5 = x => x % 2 == 0? 'par' : 'impar';
+
+        document.write(parOuImpar5(5));
+
+    </script>
+</body>
+</html>
