@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        
+        class ContaBancaria {
+
+            constructor(){
+                this.agencia = 1075;
+                this.numeroConta = 866546;
+                this.saldo = 50;
+                this.limite = 450
+            }
+
+            depositar(valorDepositado){
+                this.saldo += valorDepositado;
+            }
+
+            sacar(valorSaque){
+                this.saldo -= valorSaque;
+            }
+
+            consultaSaldo(){
+                return this.saldo + '<br>';
+            }
+
+        }
+
+        let x = new ContaBancaria();
+        let y = new ContaBancaria();
+
+        document.write(x.consultaSaldo());
+        x.depositar(100);
+        document.write(x.consultaSaldo());
+        x.sacar(70);
+        document.write(x.consultaSaldo());
+
+        document.write('<br>');
+        document.write(y.saldo);
+
+    </script>
+</body>
+</html>
