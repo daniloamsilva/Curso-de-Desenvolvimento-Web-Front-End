@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        
+        class Sofa {
+            constructor(lugares, cor, reclinavel){
+                this.lugares = lugares;
+                this.cor = cor;
+                this.reclinavel = reclinavel;
+            }
+
+            reclinar(){
+                return this.reclinavel ? 'Reclinou' : 'O sofá não é reclinável<br>';
+            }
+        }
+
+        let sofa1 = new Sofa(2, 'preto', false);
+        let sofa2 = new Sofa(3, 'vermelho', true);
+
+        document.write(sofa1.reclinar());
+        document.write(sofa2.reclinar());
+
+    </script>
+</body>
+</html>
