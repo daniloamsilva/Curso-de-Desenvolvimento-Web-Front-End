@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+        
+        class TV {
+            constructor(){
+                this._canaisDisponiveis = [2,7,10,35,43];
+                this._canalAtivo = 7;
+                this._volume = 5;
+            }
+
+            get canalAtivo(){
+                return this._canalAtivo;
+            }
+
+            set canalAtivo(canal){
+                if(this._canaisDisponiveis.indexOf(canal) != -1){
+                    this._canalAtivo = canal;
+                }
+            }
+        }
+
+        let tv = new TV();
+        tv.canalAtivo = 3;
+        document.write(tv.canalAtivo);
+
+    </script>
+</body>
+</html>
