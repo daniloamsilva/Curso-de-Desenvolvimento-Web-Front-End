@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        
+        class Animal {
+            constructor(cor, tamanho){
+                this.cor = cor;
+                this.tamanho = tamanho;
+            }
+
+            dormir(){
+                console.log('Dormiu');
+            }
+        }
+
+        class Passaro extends Animal {
+            constructor(bico, cor, tamanho){
+                super(cor, tamanho);
+                this.bico = bico;
+            }
+
+            voar(){
+                console.log('Voar');
+            }
+        }
+
+        class Papagaio extends Passaro {
+            constructor(sabeFalar, bico, cor, tamanho){
+                super(bico, cor, tamanho);
+                this.sabeFalar = sabeFalar;
+            }
+        }
+
+        let papagaio = new Papagaio(true, 'Médio', 'Verde escuro', 30);
+        console.log(papagaio);
+
+        let papagaio2 = new Papagaio(false, 'Pequeno', 'Verde claro', 15);
+        console.log(papagaio2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
