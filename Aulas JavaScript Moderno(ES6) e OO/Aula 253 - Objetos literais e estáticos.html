@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        
+        // Notação de Classes
+        class Produto {
+            constructor(descricao, valor){
+                this.descricao = descricao;
+                this.valor = valor;
+            }
+
+            verDescricao(){
+                console.log(`${this.descricao} por apenas ${this.valor}`);
+            }
+        }
+
+        let produto = new Produto('Televisão', 1500);
+        produto.verDescricao();
+
+        // Notação de objeto literal / estático
+        let produtoLiteral = {
+            descricao : 'Notebook',
+            valor : 2300,
+            verDescricao : function(){
+                console.log(`${this.descricao} por apenas ${this.valor}`);
+            }
+        }
+
+        produtoLiteral.verDescricao();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
