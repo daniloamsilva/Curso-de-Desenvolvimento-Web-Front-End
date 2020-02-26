@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        
+        let nome = 'Pedro';
+        let idade = 29;
+        let sexo =  'Masculino';
+        let profissao = 'Programador';
+
+        let objeto1 = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            apresentação: function(){
+                console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+            }
+        }
+
+        console.log(objeto1);
+        objeto1.apresentação();
+
+        let objeto2 = {
+            nome,
+            idade,
+            sexo,
+            profissao,
+            apresentação(){
+                console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+            }
+        }
+
+        console.log(objeto2);
+        objeto2.apresentação();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
