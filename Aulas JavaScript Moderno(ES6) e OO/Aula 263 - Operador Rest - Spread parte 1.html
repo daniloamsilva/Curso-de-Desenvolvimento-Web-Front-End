@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        // contexto spread
+
+        // string
+        let texto = 'Frase de teste';
+        console.log(texto);
+        console.log(...texto);
+        console.log([...texto]);
+
+        // array
+        let listaFrutas1 = ['Maça', 'Banana'];
+        let listaFrutas2 = ['Pera', 'Uva'];
+        let listaCompletaFrutas = ['Abacaxi', ...listaFrutas1, ...listaFrutas2];
+        console.log(listaCompletaFrutas);
+
+        //objetos
+        let pessoa = {nome: 'João', idade: 27};
+        let pessoaCompleto = {endereço: 'Rua blabla', ...pessoa};
+        console.log(pessoaCompleto);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
