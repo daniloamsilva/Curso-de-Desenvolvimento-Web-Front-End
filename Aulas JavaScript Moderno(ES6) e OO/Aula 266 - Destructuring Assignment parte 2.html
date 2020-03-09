@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        // DESTRUCTURING PARTE 2 - OBJETOS
+        
+        // Objeto literal
+        let produto = {
+            nome: 'Produto qualquer',
+            preco: 500,
+            descricao: {
+                fabricante: 'abc',
+                marca: 'def'
+            }
+        }
+        console.log(produto);
+
+        // Uso normal
+        let {nome, preco} = produto;
+        console.log(nome, preco);
+
+        // Mudando o nome da variavel
+        let {nome: n, preco: p} = produto;
+        console.log(n, p);
+
+        // Definir valores default
+        let {nome: n2 = 'Sem nome', preco: p2, desconto = 'Sem desconto'} = produto;
+        console.log(n2, p2, desconto);
+
+        // Extrair valores de objetos dentro de outro objeto
+        let {descricao: {fabricante, marca}} = produto;
+        console.log(fabricante, marca);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
