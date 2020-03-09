@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        // DESTRUCTURING PARTE 1 - ARRAYS
+        
+        // Array
+        let frutas = ['Abacaxi', 'Maça', 'Uva', 'Banana'];
+        console.log(frutas);
+
+        // Uso normal
+        let [a, b, c] = frutas;
+        console.log(a, b, c);
+
+        // Valores default
+        let [d, e = 'Laranja', f, g, h = 'Melão'] = frutas;
+        console.log(d, e, f, g, h); 
+
+        // Uso pulando um indice
+        let [i, , j] = frutas;
+        console.log(i, j);
+
+        // Uso com array multidimencional
+        let coisas = [['Abacaxi', 'Maça', 'Uva', 'Banana'], ['Marcelo', 'Maria']];
+        let [[,,k]] = coisas;
+        let [,[,l]] = coisas;
+        console.log(k, l);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
