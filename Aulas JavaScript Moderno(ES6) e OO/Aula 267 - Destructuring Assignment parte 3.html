@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        // DESTRUCTURING PARTE 3 - FUNÇÕES
+        
+        // Destructuting na assinatura da função passando array
+        let array = [10, 20, 30];
+
+        function imprimirArray([a, b, , c = 200]){
+            console.log(a, b, c);
+        }
+
+        imprimirArray(array);
+
+        // Destructuring na assinatura da função passando objetos
+        let objeto = {
+            d: 10,
+            e: 20,
+            f: 30
+        }
+
+        function imprimirObjeto({d: w, e: x, f: y, g: z = 200}){
+            console.log(w, x, y, z);
+        }
+
+        imprimirObjeto(objeto);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
