@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        // Array de funcionários
+        let funcionarios = [
+            {nome: 'Fernanda', cargo: 'Analista de RH', salario: 3100, status: 'ativo'},
+            {nome: 'Miguel', cargo: 'Assistente de adm', salario: 1700, status: 'ativo'},
+            {nome: 'Rosa', cargo: 'Auxiliar de contabilidade', salario: 1600, status: 'inativo'},
+            {nome: 'Roberto', cargo: 'Programador PHP', salario: 4500, status: 'ativo'},
+            {nome: 'Maria', cargo: 'Engenheira Mecânica', salario: 7500, status: 'ativo'}
+        ]
+        console.log(funcionarios);
+
+        // Primeiro filtro
+        let filtro1 = funcionarios.filter(function(f) { return f.salario < 2000 });
+        console.log(filtro1);
+
+        // Segundo filtro
+        let filtro2 = funcionarios.filter( f => f.salario < 2000);
+        console.log(filtro2);
+
+        // Filtros encadeados
+        let filtro3 = funcionarios.filter( f => f.salario < 2000).filter( f => f.status == 'ativo' );
+        console.log(filtro3);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
