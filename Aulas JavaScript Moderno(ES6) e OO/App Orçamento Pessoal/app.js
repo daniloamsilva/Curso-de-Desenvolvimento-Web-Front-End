@@ -84,8 +84,14 @@ function cadastrarDespesa(){
         document.getElementById('modalBody').innerHTML = 'Despesa foi cadastrada com sucesso!';
         document.getElementById('modalButton').className = 'btn btn-success';
         document.getElementById('modalButton').innerHTML = 'Voltar';
-
         $('#modalRegistraDespesa').modal('show');
+
+        ano.value = '';
+        mes.value = '';
+        dia.value = '';
+        tipo.value = '';
+        descricao.value = '';
+        valor.value = '';
     } else {
         document.getElementById('modalHeader').className = 'modal-header text-danger';
         document.getElementById('modalLabel').innerHTML = 'Erro na gravação';
