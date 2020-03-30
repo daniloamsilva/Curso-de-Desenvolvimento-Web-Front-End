@@ -6,8 +6,6 @@ Tecnologias estudadas: HTML5, CSS3, BootStrap 4, JavaScript, ES6, PHP 7, Orienta
 * CSS3 - Aulas 023 á 049
 * CSS3 Intermediário e Avançado - Aulas 050 á 080
 * HTML5 e CSS3 Recursos especiais - Aulas 081 á 097
-
-### Aulas pendentes
 * BootStrap4 & Design responsivo - Aulas 098 á 141
 * Javascript - Aulas 142 á 233
 * Javascript Moderno e Orientação a Objetos - Aulas 234 á 288
