@@ -1,5 +1,5 @@
-# Curso de Desenvolvimento Web
-Tecnologias estudadas: HTML5, CSS3, BootStrap 4, JavaScript, ES6, PHP 7, Orientação a objetos, MySql, PHP com PDO, Ajax, JQuery, MVC, APIs, IONIC e WordPress.
+# Curso de Desenvolvimento Web Front-End
+Tecnologias estudadas: HTML5, CSS3, BootStrap 4, JavaScript, ES6.
 
 ### Aulas cursadas
 * HTML5 - Aulas 006 á 022
@@ -9,20 +9,6 @@ Tecnologias estudadas: HTML5, CSS3, BootStrap 4, JavaScript, ES6, PHP 7, Orienta
 * BootStrap4 & Design responsivo - Aulas 098 á 141
 * Javascript - Aulas 142 á 233
 * Javascript Moderno e Orientação a Objetos - Aulas 234 á 288
-* Iniciando servidor Apache, PHP e MySql - Aulas 289 á 294
-* PHP7 - Aulas 294 á 357
-* PHP7 e Orientação á Objetos - Aulas 358 á 384
-* Banco de dados MySql - Aulas 358 á 422
-* Ajax - Aulas 423 á 437
-* PHP com PDO e MySql - Aulas 438 á 463
-* Publicação de aplicações Web na Internet - Aulas 464 á 473
-* jQuery - Aulas 474 á 501
-* MVC com PHP - Aulas 502 á 513
-* Twitter Clone (aplicação de conhecimento) - Aulas 514 á 522
-* API com Slim Framework - Aulas 523 á 530
-* SASS - Aulas 531 á 537
-* Criando apps com IONIC - Aulas 538 á 546
-* WordPress - Aulas 547 á 555
 
 ## Projetos desenvolvidos
 ### Projeto 1 - UNES Universidade
